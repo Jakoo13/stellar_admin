@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
     before_action :authenticate_user!
-    # before_action :find_user, only: %i[show]
+    before_action :find_user, only: %i[show]
 
     # user_signed_in?
     def index
